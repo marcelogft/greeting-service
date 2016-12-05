@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/marcelogft/greeting-service.svg?style=svg)](https://circleci.com/gh/marcelogft/greeting-service)
+
 # NodeJS Express example project
 
 Using Babel and Es2015
