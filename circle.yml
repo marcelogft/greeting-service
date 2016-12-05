@@ -7,5 +7,7 @@ test:
     - mocha test --require babel-core/register  --recursive --reporter mocha-junit-reporter:
         environment:
           MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
-  post:
-    - npm run cover    
+  post: 
+    - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+        environment:
+          COVERALLS_REPO_TOKEN: rbn46CQbIld8L1edyDJ47CEa75TTnZ49a
