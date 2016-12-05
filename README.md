@@ -34,6 +34,6 @@ npm test
 Get test coverage with istanbul
 
 ```
-npm run cover
+npm run coverage
 ```
 
