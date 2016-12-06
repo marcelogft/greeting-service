@@ -5,6 +5,7 @@
 # NodeJS Express example project
 
 Using Babel and Es2015
+Demo: https://greetingservice.herokuapp.com/
 
 ## Execute
 
