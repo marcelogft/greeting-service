@@ -10,3 +10,9 @@ test:
   post:
     - npm run coverage    
     - npm run report-coverage
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: greetingservice
